@@ -37,7 +37,8 @@ body
 .Left_Section
 {
       display: flex;
-      gap: 14px;
+      gap: 10px;
+      font-weight: 600;
 }
 .home_btn
 {
@@ -72,6 +73,7 @@ body
       height: 100%;
       margin-top: 60px;
       padding: 10px 50px;
+      z-index: 9;
 }
 #sidebarMenu
 {
@@ -80,7 +82,7 @@ body
       position: fixed;
       left: 0;
       top: 0;
-
+      z-index: 10;
       margin-top: 60px;
       background: #f5f5fa;
       transform: translateX(-250px);
@@ -96,15 +98,26 @@ body
 {
       color: #fff;
       border-bottom: 1px solid rgba(255,255,255,0.30);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: #000;
+      align-items: center;
+      padding-top: 40px;
+      font-weight: 600;
 }
 .menu li a
 {
       font-family:Georgia;
       text-shadow: 1px 1px 1px black;
-      color: #fff;
+      color: #000;
       display: block;
       text-decoration: none;
       text-transform: uppercase;
+}
+.menu li i
+{
+      font-size: x-large !important;
 }
 
 /* For Sidebar styling */
@@ -126,7 +139,7 @@ body
 .spinner
 {
       height: 3px;
-      background: #fff;
+      background: #000;
       transition: all 0.3s;
 }
 .spinner.top,
@@ -153,4 +166,189 @@ body
 }
 
 
+/* Content Section Css Start */
+.tab-wrap
+{
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      position: relative;
+      /* margin:10px auto; */
+      overflow: visible;
+}
 
+.tab-wrap input[type="radio"]
+{
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+}
+
+.tab-wrap li
+{
+      float: left;
+      display: block;
+}
+
+.tab-wrap label
+{
+      font-weight: 600;
+      background: white;
+      display: inline-block;
+      cursor: pointer;
+      padding:10px 20px;
+      background-color: #f0f0f0;
+
+}
+
+.tab-wrap label:hover
+{
+      color: #b9c3c3;
+}
+
+.tab-wrap .tab-content
+{
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius:0 3px 3px 3px;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      display: none;
+      
+}
+.tab-content .Pagination_Section
+{
+      display: flex;
+      justify-content: end;
+      gap: 15px;
+      margin-bottom: 40px;
+}
+.Content
+{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+}
+.tab-wrap .tab-content .Pagination_Section .Search input
+{
+      border: 1px solid #eee;
+      padding: 5px 15px;
+      border-radius: 4px;
+}
+.tab-wrap .tab-content .Pagination_Section .Print
+{
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 10px;
+      border: 1px solid #000;
+      background: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+}
+.tab-wrap .tab-content .Pagination_Section .Search input:focus
+{
+      outline: none;
+}
+
+.tab-wrap [id^=tab]:checked + label
+{
+      /* border: 1px solid black; */
+      background: #b9c3c3;
+      color: #000;
+}
+
+.tab-wrap [id^=tab]:checked ~ .tab-content
+{
+      display: block;
+      /* background:#a7b5a5; */
+      /* border: 1px solid black; */
+}
+
+.table 
+{
+      border-radius: 5px;
+      padding: 0 1px 15px 1px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.table table thead tr,.table table tbody tr
+{
+      border-radius: 15px;
+}
+.table table thead th,.table table tbody td
+{
+      border: 1px solid #dbdfe3;
+}
+.table table thead tr
+{
+      border-radius: 15px;
+}
+.Aspiration
+{
+      display: flex;
+}
+.summary_BOM .Title
+{
+      background-color: #f0f0f0;
+      padding: 15px 20px;
+      border-radius: 5px;
+      border: 1px solid #a7b5a5;
+      font-weight: 700;
+      margin-bottom: 15px;
+}
+.summary_BOM .Category
+{
+      font-weight: 700;
+      margin-bottom: 30px;
+}
+.Aspiration
+{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+}
+.Aspiration div
+{
+      width: 100%;
+      display: flex;
+}
+.Aspiration select
+{
+      width: 50%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
+.Aspiration p
+{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-left: 20px;
+}
+.Aspiration span
+{
+      background-color: green;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      cursor: pointer;
+}
+.Project_Main_Section .Desgin .Title
+{
+      background-color: #f0f0f0;
+      padding: 15px 20px;
+      border-radius: 5px;
+      border: 1px solid #a7b5a5;
+      font-weight: 700;
+      margin-bottom: 15px;
+}
+/* Content Section Css End's */
