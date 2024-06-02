@@ -256,7 +256,7 @@ body
 
 .tab-wrap [id^=tab]:checked + label
 {
-      /* border: 1px solid black; */
+      border: 2px solid #b4d2f6;
       background: #b9c3c3;
       color: #000;
 }
@@ -323,6 +323,25 @@ body
       border: 1px solid #b9c3c3;
       cursor: pointer;
 }
+.Wo_Num 
+{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 15px;
+}
+.Wo_Num span
+{
+      font-weight: 400;
+}
+.Wo_Num select
+{
+      width: 35%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
 .Aspiration p
 {
       display: flex;
@@ -351,4 +370,271 @@ body
       font-weight: 700;
       margin-bottom: 15px;
 }
+.Desgin .Desgin_Content
+{
+      display: flex;
+      justify-content: space-between;
+}
+.Desgin .Desgin_Content .Employees
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.Desgin .Desgin_Content .Employees span
+{
+      font-weight: 400;
+}
+.Desgin .Desgin_Content .Employees p
+{
+      width: 200px;
+      height: 50px;
+      border: 1px solid #a7b5a5;
+      border-radius: 5px;
+      padding: 10px 15px;
+}
+.Desgin .Desgin_Content .role
+{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+.Desgin .Desgin_Content .role div
+{
+      display: flex;
+      gap: 10px;
+}
+.Desgin .Desgin_Content .role div select
+{
+      width: 200px;
+      height: 52px;
+      border-radius: 5px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
+.Desgin .Desgin_Content .role div p
+{
+      display: flex;
+      gap: 10px;
+}
+.Desgin .Desgin_Content .role div span
+{
+      background-color: green;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.Desgin .Desgin_Content .start_date
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.Desgin .Desgin_Content .start_date input
+{
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid #a7b5a5;
+      cursor: pointer;
+}
+.Desgin .Desgin_Content .end_date
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.Desgin .Desgin_Content .end_date input
+{
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid #a7b5a5;
+      cursor: pointer;
+}
+.PPE .Title
+{
+      background-color: #f0f0f0;
+      padding: 15px 20px;
+      border-radius: 5px;
+      border: 1px solid #a7b5a5;
+      font-weight: 700;
+      margin-bottom: 15px;
+}
+.PPE .Desgin_Content
+{
+      display: flex;
+      justify-content: space-between;
+}
+.PPE .Desgin_Content
+{
+      display: flex;
+      justify-content: space-between;
+}
+.PPE .Desgin_Content .Employees
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.PPE .Desgin_Content .Employees span
+{
+      font-weight: 400;
+}
+.PPE .Desgin_Content .Employees p
+{
+      width: 200px;
+      height: 50px;
+      border: 1px solid #a7b5a5;
+      border-radius: 5px;
+      padding: 10px 15px;
+}
+.PPE .Desgin_Content .role
+{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+.PPE .Desgin_Content .role div
+{
+      display: flex;
+      gap: 10px;
+}
+.PPE .Desgin_Content .role div select
+{
+      width: 200px;
+      height: 52px;
+      border-radius: 5px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
+.PPE .Desgin_Content .role div p
+{
+      display: flex;
+      gap: 10px;
+}
+.PPE .Desgin_Content .role div span
+{
+      background-color: green;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.PPE .Desgin_Content .start_date
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.PPE .Desgin_Content .start_date input
+{
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid #a7b5a5;
+      cursor: pointer;
+}
+.PPE .Desgin_Content .end_date
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.PPE .Desgin_Content .end_date input
+{
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid #a7b5a5;
+      cursor: pointer;
+}
+
+/* Manage_Content */
+.Manage_Content .Title
+{
+      background-color: #f0f0f0;
+      padding: 15px 20px;
+      border-radius: 5px;
+      border: 1px solid #a7b5a5;
+      font-weight: 700;
+      margin-bottom: 15px;
+}
+.Manage_Content
+{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.Manage_Content .User_access
+{
+      display: flex;
+      gap: 30px;
+}
+
+.Manage_Content .User_access .Wo_Num 
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+}
+.Manage_Content .User_access .Wo_Num .Wo_Num span
+{
+      font-weight: 400;
+}
+.Manage_Content .User_access .Wo_Num select
+{
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
+.Manage_Content .User_access .Department
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      gap: 15px;
+}
+.Manage_Content .User_access .Department span
+{
+      font-weight: 400;
+}
+.Manage_Content .User_access .Department select
+{
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
+.Manage_Content .User_access .Employee
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      gap: 15px;
+}
+.Manage_Content .User_access .Employee span
+{
+      font-weight: 400;
+}
+.Manage_Content .User_access .Employee select
+{
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid #b9c3c3;
+      cursor: pointer;
+}
+/* Manage Content */
 /* Content Section Css End's */
